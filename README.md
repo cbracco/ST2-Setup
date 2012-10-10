@@ -58,11 +58,13 @@ I am partial to the [Made Of Code](http://textmatetheme.com/made-of-code) TextMa
 
 To install a color scheme, simply go to `Sublime Text 2 -> Preferences -> Browse Packages`, drop your .tmTheme files into the "Color Scheme - Default" folder, and restart ST2.
 
-To activate the color scheme, just select it from the folder located in `Sublime Text 2 -> Preferences -> Color Scheme`. Boom. Done.
+To activate the color scheme, just select it from the `Sublime Text 2 -> Preferences -> Color Scheme` folder. 
+
+Boom. Done.
 
 ## Settings
 
-One of the beautiful things about ST2 is the flexibility of its settings. You can tweak just about every little aspect of the software to get everything exactly how you want it.
+One of the beautiful things about ST2 is the flexibility of its settings. You can tweak just about every little aspect of the software to get it working exactly how you want it.
 
 Personally, I am happy with a lot of the default settings that ST2 provides, so my User Settings file is fairly lightweight.
 
@@ -269,3 +271,24 @@ An editor plugin for high-speed HTML, XML, XSL (or any other structured code for
 **For more useful ST2 packages, please check out [this GitHub project](https://github.com/mrmartineau/SublimeTextSetup).**
 
 ## Use Dropbox? Sync your ST2 setup across multiple devices
+
+Using Dropbox, I keep all of my ST2 settings, snippets, packages, etc synced between all of my machines. So if I'm home working at night and decide I want to change the tab size to 2 spaces, those changes will be reflected on my work computer when I come in the next day. I LOVE THIS.
+
+[Here is the article](http://andrew.hedges.name/blog/2012/01/19/sublime-text-2-more-sublime-with-a-drop-of-dropbox) I followed to get this all set up.
+
+### Sync up your projects
+
+Also, since I store all of my web files on Dropbox, and both of my machines' admin users share identical names, all of my ST2 projects are synced up as well. This happens because the file paths inside the .sublime-project files are identical.
+
+I am not sure if this works the same way on Windows or Linux. I imagine it should.
+
+Here is an example of what one of my saved project files looks like:
+
+	{
+		"folders":
+		[
+			{
+				"path": "/Users/[ADMIN_USERNAME]/Dropbox/Sites/examplesite/"
+			}
+		]
+	}
