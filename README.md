@@ -382,8 +382,6 @@ An editor plugin for high-speed HTML, XML, XSL (or any other structured code for
 
 ####For more useful ST2 packages, please check out [this GitHub project](https://github.com/mrmartineau/SublimeTextSetup).
 
-* * *
-
 ## <a name="sync"></a> Use Dropbox? Sync your ST2 setup across multiple devices
 
 Using Dropbox, I keep all of my ST2 settings, snippets, packages, etc synced between all of my machines. So if I'm home working at night and decide I want to change the tab size to 2 spaces, those changes will be reflected on my work computer when I come in the next day. I LOVE THIS.
