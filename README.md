@@ -10,6 +10,10 @@ First thing's first &mdash; you've gotta install the piece. Head on over to [htt
 
 ## Command Line Utility (optional)
 
+	    sublime [arguments] [files]       - edit the given files
+	or: sublime [arguments] [directories] - open the given directories
+	or: sublime [arguments]               - edit stdin
+
 If you want to be able to open files with ST2 directly from your terminal window using a custom command (I use "sublime [folderpath/file name]"), then [you will want to follow these instructions](https://gist.github.com/1195304).
 
 ## Install Package Control
@@ -26,10 +30,10 @@ The default look of ST2 is really nice, but I wanted a bit more. I've installed 
 
 1. Press the ⌘+Shift+P (or Ctrl+Shift+P for PC) key combination, type "install" into the Command Palette, and select the "Package Control: Install Package" option from the list.
 2. Type "soda" to narrow down the list, and select the "Theme - Soda" package (click with mouse or press the Enter key) to install it.
-3. To activate the theme, open your User Settings file in `Sublime Text 2 &rarr; Preferences &rarr; Settings - User`, and add the following code (change "Dark" to "Light" if you prefer that one instead):
+3. To activate the theme, open your User Settings file in `Sublime Text 2 -> Preferences -> Settings - User`, and add the following code (change "Dark" to "Light" if you prefer that one instead):
 
-    {
-        "theme": "Soda Dark.sublime-theme"
+    { 
+    	"theme": "Soda Dark.sublime-theme" 
     }
 
 4. Save your User Settings file, and re-open ST2 to see the changes take effect.
@@ -44,9 +48,9 @@ In case you didn't know, **ST2 is compatible with [TextMate themes](http://textm
 
 I am partial to the [Made Of Code](http://textmatetheme.com/made-of-code) TextMate theme, which works very nicely in the ST2 enviornment and looks great combined with the dark Soda theme.
 
-**To install a color scheme**, simply go to `Sublime Text 2 &rarr; Preferences &rarr; Browse Packages`, drop your .tmTheme files into the "Color Scheme - Default" folder, and restart ST2.
+**To install a color scheme**, simply go to `Sublime Text 2 -> Preferences -> Browse Packages`, drop your .tmTheme files into the "Color Scheme - Default" folder, and restart ST2.
 
-**To change your color scheme** in ST2, just select one from the folder located in `Sublime Text 2 &rarr; Preferences &rarr; Color Scheme`.
+**To change your color scheme** in ST2, just select one from the folder located in `Sublime Text 2 -> Preferences -> Color Scheme`.
 
 ## Settings
 
@@ -56,8 +60,8 @@ Personally, I am happy with a lot of the default settings that ST2 provides, so 
 
 ### Preferences
 
-1. Open up the Default Settings file and you'll see all the preferences you can tweak. This file can be found by going to `Sublime Text 2 &rarr; Preferences &rarr; Settings - Default`.
-2. Also open up the User Settings file, which can be found by going to `Sublime Text 2 &rarr; Preferences &rarr; Settings - User`.
+1. Open up the Default Settings file and you'll see all the preferences you can tweak. This file can be found by going to `Sublime Text 2 -> Preferences -> Settings - Default`.
+2. Also open up the User Settings file, which can be found by going to `Sublime Text 2 -> Preferences -> Settings - User`.
 
 Below is what my current User Settings `Preferences.sublime-settings - User` file looks like:
 
@@ -84,8 +88,8 @@ The `tab_size` and `translate_tabs_to_spaces` options are already "4" and "false
 
 To help speed up your workflow, ST2 provides a ton of built-in key bindings, or keyboard shortcuts. As you've probably guessed, you can also create your own custom keyboard shortcuts.
 
-1. Open up the Default Key Bindings file and you'll see all the available keyboard shortcuts. This file can be found by going to `Sublime Text 2 &rarr; Preferences &rarr; Key Bindings - Default`.
-2. Also open up the User Key Bindings file, which can be found by going to `Sublime Text 2 &rarr; Preferences &rarr; Key Bindings - User`.
+1. Open up the Default Key Bindings file and you'll see all the available keyboard shortcuts. This file can be found by going to `Sublime Text 2 -> Preferences -> Key Bindings - Default`.
+2. Also open up the User Key Bindings file, which can be found by going to `Sublime Text 2 -> Preferences -> Key Bindings - User`.
 
 Below is what my current User Key Bindings `Default (OSX).sublime-keymap - User` file looks like:
 
