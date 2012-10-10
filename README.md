@@ -278,7 +278,7 @@ Using Dropbox, I keep all of my ST2 settings, snippets, packages, etc synced bet
 
 ### Sync up your projects
 
-Also, since I store all of my web files on Dropbox, and both of my machines' admin users share identical names, all of my ST2 projects are synced up as well. This happens because the file paths inside the .sublime-project files are identical.
+Also, since I store all of my web files on Dropbox, and both of my machines' admin users share identical names, all of my [ST2 projects](http://www.sublimetext.com/docs/2/projects.html) are synced up as well. This happens because the file paths inside the .sublime-project files are identical.
 
 I am not sure if this works the same way on Windows or Linux. I imagine it should.
 
