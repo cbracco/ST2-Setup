@@ -282,7 +282,7 @@ Also, since I store all of my web files on Dropbox, and both of my machines' adm
 
 I am not sure if this works the same way on Windows or Linux. I imagine it should.
 
-Here is an example of what one of my saved project files looks like:
+Here is an example of what one of my saved `.sublime-project` files looks like:
 
 	{
 		"folders":
