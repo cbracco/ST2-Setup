@@ -380,7 +380,7 @@ An editor plugin for high-speed HTML, XML, XSL (or any other structured code for
 
 * * *
 
-**For more useful ST2 packages, please check out [this GitHub project](https://github.com/mrmartineau/SublimeTextSetup).**
+####For more useful ST2 packages, please check out [this GitHub project](https://github.com/mrmartineau/SublimeTextSetup).
 
 * * *
 
