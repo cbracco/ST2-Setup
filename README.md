@@ -7,71 +7,38 @@ This project contains a collection of instructions, suggestions, and settings th
 ### Table of contents
 
 1. **[Install Sublime Text 2](#install-st2)**
-
 2. **[(Optional) Command Line Utility](#command-line)**
-
 3. **[Install Package Control](#package-control)**
-
 4. **[Themes](#themes)**
-	
 	i. [Installing the Soda theme](#install-theme)
-
 5. **[Color Schemes](#schemes)**
-	
 	i. [Installing a color scheme](#install-scheme)
-
 6. **[Settings](#settings)**
-	
 	i. [Preferences](#settings-preferences)
-	
 	ii. [Key Bindings](#settings-bindings)
-
 7. **[Packages](#packages)**
-	
 	i. [Advanced New File](#pkg-advancednewfile)
-	
 	ii. [Alignment](#pkg-alignment)
-	
 	iii. [BracketHighlighter](#pkg-brackethighlighter)
-	
 	iv. [Clipboard History](#pkg-clipboard)
-	
 	v. [Coffeescript](#pkg-coffeescript)
-	
 	vi. [CSS Snippets](#pkg-csssnippets)
-	
 	vii. [CSS Comb](#pkg-csscomb)
-	
 	viii. [Detect Syntax](#pkg-detect)
-	
 	ix. [Goto Documentation](#pkg-gotodoc)
-	
 	x. [Hex-to-HSL](#pkg-hexhsl)
-	
 	xi. [Hex-to-RGBA](#pkg-hexrgba)
-	
 	xii. [HTML5](#pkg-html5)
-	
 	xiii. [jQuery](#pkg-jquery)
-	
 	xiv. [JsFormat](#pkg-jsformat)
-	
 	xv. [LESS](#pkg-less)
-	
 	xvi. [NetTuts+ Fetch](#pkg-fetch)
-	
 	xvii. [Sass](#pkg-sass)
-	
 	xviii. [SFTP](#pkg-sftp)
-	
 	xix. [Sidebar Enhancements](#pkg-sidebarenhancements)
-	
 	xx. [SublimeCodeIntel](#pkg-codeintel)
-	
 	xxi. [ZenCoding](#pkg-zencoding)
-
 8. **[Use Dropbox? Sync your ST2 setup across multiple devices](#sync)**
-	
 	i. [Sync up your ST2 projects](#sync-projects)
 
 ## <a name="install-st2"></a> Install Sublime Text 2
