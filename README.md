@@ -211,6 +211,8 @@ Allows you to quickly create new folder structures and files.
 
 OSX, Windows, Linux: `Ctrl+Alt+A`
 
+* * *
+
 ### <a name="pkg-alignment"></a> [Alignment](http://wbond.net/sublime_packages/alignment) by [Will Bond](http://wbond.net/)
 
 Simpler alignment of multi-line selections and multiple selections.
@@ -226,9 +228,13 @@ Select a chunk of code, or make multiple selections, and press
 OSX: `Cmd+Ctrl+A`
 Windows, Linux: `Ctrl+Alt+A`
 
+* * *
+
 ### <a name="pkg-brackethighlighter"></a> [BracketHighlighter](https://github.com/facelessuser/BracketHighlighter) by [Isaac Muse](https://github.com/facelessuser)
 
 Adds highlighting of beginning and ending brackets in many programming languages. A huge time saver.
+
+* * *
 
 ### <a name="pkg-clipboard"></a> [Clipboard History](https://github.com/kemayo/sublime-text-2-clipboard-history) by [David Lynch](https://github.com/kemayo)
 
@@ -241,15 +247,21 @@ To show the clipboard history, press
 OSX: `Cmd+Alt+Ctrl+V`
 Windows, Linux: `Ctrl+Alt+V`
 
+* * *
+
 ### <a name="pkg-coffeescript"></a> [Coffeescript](https://github.com/Xavura/CoffeeScript-Sublime-Plugin) by [Xavura](https://github.com/Xavura)
 
 A TextMate syntax bundle for Coffeescript.
+
+* * *
 
 ### <a name="pkg-csssnippets"></a> [CSS Snippets](https://github.com/joshnh/CSS-Snippets) by [Joshua Hibbert](http://joshnh.com/)
 
 A collection of useful CSS snippets. HUGE TIME SAVER.
 
 If interested, I've created my own fork of this package [here](https://github.com/cbracco/CSS-Snippets).
+
+* * *
 
 ### <a name="pkg-csscomb"></a> [CSS Comb](https://github.com/miripiruni/CSScomb-for-Sublime) by [Slava Oliyanchuk](https://github.com/miripiruni)
 
@@ -261,9 +273,13 @@ Select a chunk of CSS, and press
 
 OSX, Windows Linux: `Ctrl+Shift+C`
 
+* * *
+
 ### <a name="pkg-detect"></a> [Detect Syntax](https://github.com/phillipkoebbe/DetectSyntax) by [Phillip Koebe](https://github.com/phillipkoebbe)
 
 Helps to decifer the syntax of files that might not otherwise be detected properly.
+
+* * *
 
 ### <a name="pkg-gotodoc"></a> [Goto Documentation](https://github.com/kemayo/sublime-text-2-goto-documentation) by [David Lynch](https://github.com/kemayo)
 
@@ -275,6 +291,8 @@ Click to place your cursor on a function, and press
 
 OSX, Windows, Linux: `Ctrl+Shift+H`
 
+* * *
+
 ### <a name="pkg-hexhsl"></a> [Hex-to-HSL](https://github.com/atadams/Hex-to-HSL-Color) by [atadams](https://github.com/atadams)
 
 Converts hexadecimal colors to HSL colors, and visa versa.
@@ -284,6 +302,8 @@ Converts hexadecimal colors to HSL colors, and visa versa.
 Click to place your cursor on a hex or HSL value, and press
 
 OSX, Windows, Linux: `Ctrl+Shift+U`
+
+* * *
 
 ### <a name="pkg-hexrgba"></a> [Hex-to-RGBA](https://github.com/aroscoe/Hex-to-RGBA) by [Anthony Roscoe](https://github.com/aroscoe)
 
@@ -296,21 +316,31 @@ Click to place your cursor on a hex or RGBa value, and press
 OSX: `Cmd+Shift+R`
 Windows, Linux: `Ctrl+Shift+R`
 
+* * *
+
 ### <a name="pkg-html5"></a> [HTML5](https://github.com/mrmartineau/HTML5) by [Zander Martineau](http://martineau.tv/)
 
 Adds HTML5 syntax highlighting & relevant snippets to ST2.
+
+* * *
 
 ### <a name="pkg-jquery"></a> [jQuery](https://github.com/SublimeText/jQuery) by [Sublime Text](http://www.sublimetext.info/)
 
 jQuery syntax highlighting and snippets for ST2.
 
+* * *
+
 ### <a name="pkg-jsformat"></a> [JsFormat](https://github.com/jdc0589/JsFormat) by [Davis Clark](https://github.com/jdc0589)
 
 Javascript syntax highlighting for ST2.
 
+* * *
+
 ### <a name="pkg-less"></a> [LESS](https://github.com/danro/LESS-sublime) by [Dan Rogers](http://danro.net/)
 
 LESS syntax highlighting for ST2.
+
+* * *
 
 ### <a name="pkg-fetch"></a> [NetTuts+ Fetch](http://net.tutsplus.com/articles/news/introducing-nettuts-fetch/) by [NetTuts+](http://net.tutsplus.com/)
 
@@ -318,27 +348,41 @@ LESS syntax highlighting for ST2.
 
 Type `fetch` into the Command Palette.
 
+* * *
+
 ### <a name="pkg-sass"></a> [Sass](https://github.com/nathos/sass-textmate-bundle) by [Nathan Henderson](http://nathos.com/)
 
 Adds syntax highlighting, indentation, and snippets for Sass and SCSS files.
+
+* * *
 
 ### <a name="pkg-sftp"></a> [SFTP](http://wbond.net/sublime_packages/sftp) by [Will Bond](http://wbond.net/)
 
 Commercial SFTP/FTP plugin (free with nag popup) - upload, sync, browse, remote edit, diff, and vcs integration
 
+* * *
+
 ### <a name="pkg-sidebarenhancements"></a> [Sidebar Enhancements](https://github.com/titoBouzout/SideBarEnhancements) by [titoBouzout](https://github.com/titoBouzout)
 
 Adds a bunch of new options to the ST2 sidebar, making it exponentially more useful.
+
+* * *
 
 ### <a name="pkg-codeintel"></a> [SublimeCodeIntel](https://github.com/Kronuz/SublimeCodeIntel) by [Germán M. Bravo](https://github.com/Kronuz)
 
 Provides auto-completion information in real-time, and function call tooltips.
 
+* * *
+
 ### <a name="pkg-zencoding"></a> [ZenCoding](https://bitbucket.org/sublimator/sublime-2-zencoding) by [Nicholas Dudfield](https://bitbucket.org/sublimator/)
 
 An editor plugin for high-speed HTML, XML, XSL (or any other structured code format) coding and editing.
 
+* * *
+
 **For more useful ST2 packages, please check out [this GitHub project](https://github.com/mrmartineau/SublimeTextSetup).**
+
+* * *
 
 ## <a name="sync"></a> Use Dropbox? Sync your ST2 setup across multiple devices
 
