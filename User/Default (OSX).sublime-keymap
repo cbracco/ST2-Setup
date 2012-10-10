@@ -1,0 +1,24 @@
+[
+	// Refresh settings & folder list
+	{ "keys": ["super+ctrl+r"], "command": "settings_refresh" },
+	{ "keys": ["alt+ctrl+r"], "command": "refresh_folder_list" },
+
+	// Toggle sidebar visibility
+	{ "keys": ["ctrl+s"], "command": "toggle_side_bar" },
+
+	// Package - Advanced New File
+	{ "keys": ["super+alt+n"], "command": "advanced_new_file"},
+	{ "keys": ["shift+super+alt+n"], "command": "advanced_new_file", "args": {"is_python": true}},
+
+	// Package - Goto Documentation
+	{ "keys": ["ctrl+shift+h"], "command": "goto_documentation" },
+
+	// Package - Hex-to-HSL, convert hex values to HSL
+	{ "keys": ["super+shift+h"], "command": "hex_to_hsl" },
+
+	// Package - Hex-to-RGBa, convert hex values to RGBa
+	{ "keys": ["super+shift+r"], "command": "hex_to_rgba" },
+
+	// Package - SFTP, browse server of current file
+	{ "keys": ["super+ctrl+s"], "command": "sftp_browse" }
+]
