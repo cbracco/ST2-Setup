@@ -20,7 +20,7 @@ If you want to be able to open files with ST2 directly from your terminal window
 
 Next, you'll definitely want to install [Package Control](http://wbond.net/sublime_packages/package_control), a nifty ST2 plugin that lets you manage ST2 packages directly from ST2's Command Palette (`Cmd+Shift+P` for Mac, `Ctrl+Shift+P` for Windows/Linux).
 
-To install, bring up the ST2 console (``Ctrl + ` ``), paste in the following code, and hit return:
+To install, bring up the ST2 console (``Ctrl + ```), paste in the following code, and hit return:
 
 	import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'
 
