@@ -8,17 +8,21 @@ This project contains a collection of instructions, suggestions, and settings th
 
 First thing's first &mdash; you've gotta install the piece. Head on over to [http://www.sublimetext.com/dev](http://www.sublimetext.com/dev), download, and install it on your machine.
 
-## Command Line Utility (optional)
+## (Optional) Command Line Utility
 
 	    sublime [arguments] [files]       - edit the given files
 	or: sublime [arguments] [directories] - open the given directories
 	or: sublime [arguments]               - edit stdin
 
-If you want to be able to open files with ST2 directly from your terminal window using a custom command (I use "sublime [folderpath/file name]"), then [you will want to follow these instructions](https://gist.github.com/1195304).
+If you want to be able to open files with ST2 directly from your terminal window using a custom command (something I do quite often), then [you will want to follow these instructions](https://gist.github.com/1195304).
 
 ## Install Package Control
 
-Next, you'll definitely want to install [Package Control](http://wbond.net/sublime_packages/package_control), a nifty ST2 plugin that lets you manage ST2 packages directly from ST2's Command Palette (⌘+Shift+P for Mac, Ctrl+Shift+P for PC).
+Next, you'll definitely want to install [Package Control](http://wbond.net/sublime_packages/package_control), a nifty ST2 plugin that lets you manage ST2 packages directly from ST2's Command Palette (Cmd+Shift+P for Mac, Ctrl+Shift+P for Windows/Linux).
+
+To install, bring up the ST2 console (Ctrl + `), paste in the following code, and hit return:
+
+	import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'
 
 ## Themes
 
@@ -28,13 +32,15 @@ The default look of ST2 is really nice, but I wanted a bit more. I've installed 
 
 ### Installing the Soda theme
 
-1. Press the ⌘+Shift+P (or Ctrl+Shift+P for PC) key combination, type "install" into the Command Palette, and select the "Package Control: Install Package" option from the list.
+1. Press the Cmd+Shift+P (or Ctrl+Shift+P for Windows/Linux) key combination, type "install" into the Command Palette, and select the "Package Control: Install Package" option from the list.
+
 2. Type "soda" to narrow down the list, and select the "Theme - Soda" package (click with mouse or press the Enter key) to install it.
+
 3. To activate the theme, open your User Settings file in `Sublime Text 2 -> Preferences -> Settings - User`, and add the following code (change "Dark" to "Light" if you prefer that one instead):
 
-    { 
-    	"theme": "Soda Dark.sublime-theme" 
-    }
+		{ 
+			"theme": "Soda Dark.sublime-theme"
+		}
 
 4. Save your User Settings file, and re-open ST2 to see the changes take effect.
 
@@ -48,9 +54,11 @@ In case you didn't know, **ST2 is compatible with [TextMate themes](http://textm
 
 I am partial to the [Made Of Code](http://textmatetheme.com/made-of-code) TextMate theme, which works very nicely in the ST2 enviornment and looks great combined with the dark Soda theme.
 
-**To install a color scheme**, simply go to `Sublime Text 2 -> Preferences -> Browse Packages`, drop your .tmTheme files into the "Color Scheme - Default" folder, and restart ST2.
+### Installing a color scheme
 
-**To change your color scheme** in ST2, just select one from the folder located in `Sublime Text 2 -> Preferences -> Color Scheme`.
+To install a color scheme, simply go to `Sublime Text 2 -> Preferences -> Browse Packages`, drop your .tmTheme files into the "Color Scheme - Default" folder, and restart ST2.
+
+To activate the color scheme, just select it from the folder located in `Sublime Text 2 -> Preferences -> Color Scheme`. Boom. Done.
 
 ## Settings
 
@@ -61,6 +69,7 @@ Personally, I am happy with a lot of the default settings that ST2 provides, so 
 ### Preferences
 
 1. Open up the Default Settings file and you'll see all the preferences you can tweak. This file can be found by going to `Sublime Text 2 -> Preferences -> Settings - Default`.
+
 2. Also open up the User Settings file, which can be found by going to `Sublime Text 2 -> Preferences -> Settings - User`.
 
 Below is what my current User Settings `Preferences.sublime-settings - User` file looks like:
@@ -84,7 +93,7 @@ Since I work off a 27" iMac at the office, and a 15" Macbook Pro at home, I find
 
 The `tab_size` and `translate_tabs_to_spaces` options are already "4" and "false" in the Default Settings file, but I added them here because they are some of the more commonly altered options. Also, depending on the project I'm working on, I may have to change those settings on the fly so I don't screw up the spacing for anyone I'm working with.
 
-### Key Bindings
+### Key Bindings (Shortcuts)
 
 To help speed up your workflow, ST2 provides a ton of built-in key bindings, or keyboard shortcuts. As you've probably guessed, you can also create your own custom keyboard shortcuts.
 
@@ -120,6 +129,143 @@ Below is what my current User Key Bindings `Default (OSX).sublime-keymap - User`
 
 ## Packages
 
+Packages are tiny plugins you can install to further enhance your ST2 workflow experience. There are a number of packages that I consider to be essential to my workflow, listed below:
 
+### [Advanced New File](https://github.com/xobb1t/Sublime-AdvancedNewFile) by [Dima Kukushkin](https://github.com/xobb1t/)
+
+Allows you to quickly create new folder structures and files.
+
+#### Key bindings
+
+OSX, Windows, Linux: `Ctrl+Alt+A`
+
+### [Alignment](http://wbond.net/sublime_packages/alignment) by [Will Bond](http://wbond.net/)
+
+Simpler alignment of multi-line selections and multiple selections.
+
+*Align multiple selections to the same column by inserting spaces (or tabs)
+*Align all lines in a multi-line selection to the same indent level
+*Align the first = on each line of a multi-line selection to the same column
+
+#### Key bindings
+
+Select a chunk of code, or make multiple selections, and press
+
+OSX: `Cmd+Ctrl+A`
+Windows, Linux: `Ctrl+Alt+A`
+
+### [BracketHighlighter](https://github.com/facelessuser/BracketHighlighter) by [Isaac Muse](https://github.com/facelessuser)
+
+Adds highlighting of beginning and ending brackets in many programming languages. A huge time saver.
+
+### [Clipboard History](https://github.com/kemayo/sublime-text-2-clipboard-history) by [David Lynch](https://github.com/kemayo)
+
+Allows you to copy multiple selections to your clipboard within ST2, to be used interchangeably.
+
+#### Key bindings
+
+To show the clipboard history, press
+
+OSX: `Cmd+Alt+Ctrl+V`
+Windows, Linux: `Ctrl+Alt+V`
+
+### [Coffeescript](https://github.com/Xavura/CoffeeScript-Sublime-Plugin) by [Xavura](https://github.com/Xavura)
+
+A TextMate syntax bundle for Coffeescript.
+
+### [CSS Snippets](https://github.com/joshnh/CSS-Snippets) by [Joshua Hibbert](http://joshnh.com/)
+
+A collection of useful CSS snippets. HUGE TIME SAVER.
+
+If interested, I've created my own fork of this package [here](https://github.com/cbracco/CSS-Snippets).
+
+### [CSS Comb](https://github.com/miripiruni/CSScomb-for-Sublime) by [Slava Oliyanchuk](https://github.com/miripiruni)
+
+An amazing package for sorting your CSS properties in a more readable and logical order.
+
+#### Key bindings
+
+Select a chunk of CSS, and press
+
+OSX, Windows Linux: `Ctrl+Shift+C`
+
+### [Detect Syntax](https://github.com/phillipkoebbe/DetectSyntax) by [Phillip Koebe](https://github.com/phillipkoebbe)
+
+Helps to decifer the syntax of files that might not otherwise be detected properly.
+
+### [Goto Documentation](https://github.com/kemayo/sublime-text-2-goto-documentation) by [David Lynch](https://github.com/kemayo)
+
+Finds relevant documentation for the function you have your cursor on.
+
+#### Key bindings
+
+Click to place your cursor on a function, and press
+
+OSX, Windows, Linux: `Ctrl+Shift+H`
+
+### [Hex-to-HSL](https://github.com/atadams/Hex-to-HSL-Color) by [atadams](https://github.com/atadams)
+
+Converts hexadecimal colors to HSL colors, and visa versa.
+
+#### Key bindings
+
+Click to place your cursor on a hex or HSL value, and press
+
+OSX, Windows, Linux: `Ctrl+Shift+U`
+
+### [Hex-to-RGBA](https://github.com/aroscoe/Hex-to-RGBA) by [Anthony Roscoe](https://github.com/aroscoe)
+
+Converts hexadecimal colors to RGBa colors, and visa versa.
+
+#### Key bindings
+
+Click to place your cursor on a hex or RGBa value, and press
+
+OSX: `Cmd+Shift+R`
+Windows, Linux: `Ctrl+Shift+R`
+
+### [HTML5](https://github.com/mrmartineau/HTML5) by [Zander Martineau](http://martineau.tv/)
+
+Adds HTML5 syntax highlighting & relevant snippets to ST2.
+
+### [jQuery](https://github.com/SublimeText/jQuery) by [Sublime Text](http://www.sublimetext.info/)
+
+jQuery syntax highlighting and snippets for ST2.
+
+### [JsFormat](https://github.com/jdc0589/JsFormat) by [Davis Clark](https://github.com/jdc0589)
+
+Javascript syntax highlighting for ST2.
+
+### [LESS](https://github.com/danro/LESS-sublime) by [Dan Rogers](http://danro.net/)
+
+LESS syntax highlighting for ST2.
+
+### [NetTuts+ Fetch](http://net.tutsplus.com/articles/news/introducing-nettuts-fetch/) by [NetTuts+](http://net.tutsplus.com/)
+
+#### Key bindings
+
+Type `fetch` into the Command Palette.
+
+### [Sass](https://github.com/nathos/sass-textmate-bundle) by [Nathan Henderson](http://nathos.com/)
+
+Adds syntax highlighting, indentation, and snippets for Sass and SCSS files.
+
+### [SFTP](http://wbond.net/sublime_packages/sftp) by [Will Bond](http://wbond.net/)
+
+Commercial SFTP/FTP plugin (free with nag popup) - upload, sync, browse, remote edit, diff, and vcs integration
+
+### [Sidebar Enhancements](https://github.com/titoBouzout/SideBarEnhancements) by [titoBouzout](https://github.com/titoBouzout)
+
+Adds a bunch of new options to the ST2 sidebar, making it exponentially more useful.
+
+### [SublimeCodeIntel](https://github.com/Kronuz/SublimeCodeIntel) by [Germán M. Bravo](https://github.com/Kronuz)
+
+Provides auto-completion information in real-time, and function call tooltips.
+
+### [ZenCoding](https://bitbucket.org/sublimator/sublime-2-zencoding) by [Nicholas Dudfield](https://bitbucket.org/sublimator/)
+
+An editor plugin for high-speed HTML, XML, XSL (or any other structured code format) coding and editing.
+
+**For more useful ST2 packages, please check out [this GitHub project](https://github.com/mrmartineau/SublimeTextSetup).**
 
 ## Use Dropbox? Sync your ST2 setup across multiple devices
