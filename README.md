@@ -386,7 +386,7 @@ An editor plugin for high-speed HTML, XML, XSL (or any other structured code for
 
 Using Dropbox, I keep all of my ST2 settings, snippets, packages, etc synced between all of my machines. So if I'm home working at night and decide I want to change the tab size to 2 spaces, those changes will be reflected on my work computer when I come in the next day. I LOVE THIS.
 
-[Here is the article](http://andrew.hedges.name/blog/2012/01/19/sublime-text-2-more-sublime-with-a-drop-of-dropbox) I followed to get this all set up.
+[Here is the article](http://wheels.onebuttonapps.net/2012/04/use-dropbox-to-store-your-sublime-text-2-settings/) I followed to get this set up correctly.
 
 ### <a name="sync-projects"></a> Sync up your ST2 projects
 
