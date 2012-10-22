@@ -388,7 +388,7 @@ Using Dropbox, I keep all of my ST2 settings, snippets, packages, etc synced bet
 
 [Here is the article](http://talltroym.blogspot.com/2012/07/sync-sublime-between-multiple-macs.html) I followed to get this set up correctly.
 
-### <a name="sync-projects"></a> Sync up your ST2 projects
+### <a name="sync-projects"></a> Sync up your local ST2 projects
 
 Also, since I store all of my web files on Dropbox, and both of my machines' admin users share identical names, all of my [ST2 projects](http://www.sublimetext.com/docs/2/projects.html) are synced up as well. This happens because the file paths inside the `.sublime-project` files are identical.
 
