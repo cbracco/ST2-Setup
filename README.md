@@ -90,7 +90,7 @@ If you want to be able to open files with ST2 directly from your terminal window
 
 Next, you'll definitely want to install [Package Control](http://wbond.net/sublime_packages/package_control), a nifty ST2 plugin that lets you manage ST2 packages directly from ST2's Command Palette (<kbd>Cmd+Shift+P</kbd> for Mac, <kbd>Ctrl+Shift+P</kbd> for Windows/Linux).
 
-To install, bring up the ST2 console (``Ctrl + ` ``), paste in the following code, and hit return:
+To install, bring up the ST2 console (<kbd>Ctrl + `</kbd>), paste in the following code, and hit return:
 
 	import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'
 
@@ -102,7 +102,7 @@ The default look of ST2 is really nice, but I wanted a bit more. I've installed 
 
 ### <a name="install-theme"></a> Installing the Soda theme
 
-1. Press the `Cmd+Shift+P` (or `Ctrl+Shift+P` for Windows/Linux) key combination, type "install" into the Command Palette, and select the "Package Control: Install Package" option from the list.
+1. Press the <kbd>Cmd+Shift+P</kbd> (or <kbd>Ctrl+Shift+P</kbd> for Windows/Linux) key combination, type "install" into the Command Palette, and select the "Package Control: Install Package" option from the list.
 
 2. Type "soda" to narrow down the list, and select the "Theme - Soda" package (click with mouse or press the Enter key) to install it.
 
@@ -215,7 +215,7 @@ Allows you to quickly create new folder structures and files.
 
 #### Key bindings
 
-OSX, Windows, Linux: `Ctrl+Alt+A`
+OSX, Windows, Linux: <kbd>Ctrl+Alt+A</kbd>
 
 * * *
 
@@ -231,8 +231,8 @@ Simpler alignment of multi-line selections and multiple selections.
 
 Select a chunk of code, or make multiple selections, and press
 
-OSX: `Cmd+Ctrl+A`
-Windows, Linux: `Ctrl+Alt+A`
+OSX: <kbd>Cmd+Ctrl+A</kbd>
+Windows, Linux: <kbd>Ctrl+Alt+A</kbd>
 
 * * *
 
@@ -250,8 +250,8 @@ Allows you to copy multiple selections to your clipboard within ST2, to be used 
 
 To show the clipboard history, press
 
-OSX: `Cmd+Alt+Ctrl+V`
-Windows, Linux: `Ctrl+Alt+V`
+OSX: <kbd>Cmd+Alt+Ctrl+V</kbd>
+Windows, Linux: <kbd>Ctrl+Alt+V</kbd>
 
 * * *
 
@@ -277,7 +277,7 @@ An amazing package for sorting your CSS properties in a more readable and logica
 
 Select a chunk of CSS, and press
 
-OSX, Windows Linux: `Ctrl+Shift+C`
+OSX, Windows Linux: <kbd>Ctrl+Shift+C</kbd>
 
 * * *
 
@@ -295,7 +295,7 @@ Finds relevant documentation for the function you have your cursor on.
 
 Click to place your cursor on a function, and press
 
-OSX, Windows, Linux: `Ctrl+Shift+H`
+OSX, Windows, Linux: <kbd>Ctrl+Shift+H</kbd>
 
 * * *
 
@@ -307,7 +307,7 @@ Converts hexadecimal colors to HSL colors, and visa versa.
 
 Click to place your cursor on a hex or HSL value, and press
 
-OSX, Windows, Linux: `Ctrl+Shift+U`
+OSX, Windows, Linux: <kbd>Ctrl+Shift+U</kbd>
 
 * * *
 
@@ -319,8 +319,8 @@ Converts hexadecimal colors to RGBa colors, and visa versa.
 
 Click to place your cursor on a hex or RGBa value, and press
 
-OSX: `Cmd+Shift+R`
-Windows, Linux: `Ctrl+Shift+R`
+OSX: <kbd>Cmd+Shift+R</kbd>
+Windows, Linux: <kbd>Ctrl+Shift+R</kbd>
 
 * * *
 
