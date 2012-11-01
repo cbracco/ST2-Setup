@@ -88,7 +88,7 @@ If you want to be able to open files with ST2 directly from your terminal window
 
 ## <a name="package-control"></a> Install Package Control
 
-Next, you'll definitely want to install [Package Control](http://wbond.net/sublime_packages/package_control), a nifty ST2 plugin that lets you manage ST2 packages directly from ST2's Command Palette (`Cmd+Shift+P` for Mac, `Ctrl+Shift+P` for Windows/Linux).
+Next, you'll definitely want to install [Package Control](http://wbond.net/sublime_packages/package_control), a nifty ST2 plugin that lets you manage ST2 packages directly from ST2's Command Palette (<kbd>Cmd+Shift+P</kbd> for Mac, <kbd>Ctrl+Shift+P</kbd> for Windows/Linux).
 
 To install, bring up the ST2 console (``Ctrl + ` ``), paste in the following code, and hit return:
 
