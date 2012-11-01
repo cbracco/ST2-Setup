@@ -1,6 +1,6 @@
 # Sublime Text 2 Setup/Workflow
 
-My favorite text editor right now is [Sublime Text 2](http://www.sublimetext.com/2). While it does have its limitations, it satisfies most of my needs as a (heavily front-end) web designer/developer. 
+My favorite text editor right now is [Sublime Text 2](http://www.sublimetext.com/2). While it does have its limitations, it satisfies most of my needs as a (heavily front-end) web designer/developer.
 
 This project contains a collection of instructions, suggestions, and settings that outline my current Sublime Text 2 workflow, and how you can achieve a similar configuration.
 
@@ -13,65 +13,65 @@ This project contains a collection of instructions, suggestions, and settings th
 3. **[Install Package Control](#package-control)**
 
 4. **[Themes](#themes)**
-	
+
 	i. [Installing the Soda theme](#install-theme)
 
 5. **[Color Schemes](#schemes)**
-	
+
 	i. [Installing a color scheme](#install-scheme)
 
 6. **[Settings](#settings)**
-	
+
 	i. [Preferences](#settings-preferences)
-	
+
 	ii. [Key Bindings](#settings-bindings)
 
 7. **[Packages](#packages)**
-	
+
 	i. [Advanced New File](#pkg-advancednewfile)
-	
+
 	ii. [Alignment](#pkg-alignment)
-	
+
 	iii. [BracketHighlighter](#pkg-brackethighlighter)
-	
+
 	iv. [Clipboard History](#pkg-clipboard)
-	
+
 	v. [Coffeescript](#pkg-coffeescript)
-	
+
 	vi. [CSS Snippets](#pkg-csssnippets)
-	
+
 	vii. [CSS Comb](#pkg-csscomb)
-	
+
 	viii. [Detect Syntax](#pkg-detect)
-	
+
 	ix. [Goto Documentation](#pkg-gotodoc)
-	
+
 	x. [Hex-to-HSL](#pkg-hexhsl)
-	
+
 	xi. [Hex-to-RGBA](#pkg-hexrgba)
-	
+
 	xii. [HTML5](#pkg-html5)
-	
+
 	xiii. [jQuery](#pkg-jquery)
-	
+
 	xiv. [JsFormat](#pkg-jsformat)
-	
+
 	xv. [LESS](#pkg-less)
-	
+
 	xvi. [NetTuts+ Fetch](#pkg-fetch)
-	
+
 	xvii. [Sass](#pkg-sass)
-	
+
 	xviii. [SFTP](#pkg-sftp)
-	
+
 	xix. [Sidebar Enhancements](#pkg-sidebarenhancements)
-	
+
 	xx. [SublimeCodeIntel](#pkg-codeintel)
-	
+
 	xxi. [ZenCoding](#pkg-zencoding)
 
 8. **[Use Dropbox? Sync your ST2 setup across multiple devices](#sync)**
-	
+
 	i. [Sync up your ST2 projects](#sync-projects)
 
 ## <a name="install-st2"></a> Install Sublime Text 2
@@ -96,7 +96,7 @@ To install, bring up the ST2 console (``Ctrl + ` ``), paste in the following cod
 
 ## <a name="themes"></a> Themes
 
-It's important to note that ST2 "Themes" change the actual look and feel of the software itself. They are not to be confused with "Color Schemes" (explained in the next section), which alter the look and feel of your code within the editor. 
+It's important to note that ST2 "Themes" change the actual look and feel of the software itself. They are not to be confused with "Color Schemes" (explained in the next section), which alter the look and feel of your code within the editor.
 
 The default look of ST2 is really nice, but I wanted a bit more. I've installed the fantastic [Soda Theme by Ian Hill](https://github.com/buymeasoda/soda-theme), and I am very happy with it. I am currently using the "Dark" option.
 
@@ -108,7 +108,7 @@ The default look of ST2 is really nice, but I wanted a bit more. I've installed 
 
 3. To activate the theme, open your User Settings file in `Sublime Text 2 -> Preferences -> Settings - User`, and add the following code (change "Dark" to "Light" if you prefer that one instead):
 
-		{ 
+		{
 			"theme": "Soda Dark.sublime-theme"
 		}
 
@@ -120,15 +120,15 @@ If you aren't a fan of the Soda theme, there are [plenty of other options out th
 
 ST2 Color Schemes alter the look and feel of your code, adding syntax highlighting and other goodies. Adding color makes it easier for humans to read and skim through code.
 
-In case you didn't know, **ST2 is compatible with [TextMate themes](http://textmatetheme.com)**. 
+In case you didn't know, **ST2 is compatible with [TextMate themes](http://textmatetheme.com)**.
 
-I am partial to the [Made Of Code](http://textmatetheme.com/made-of-code) TextMate theme, which works very nicely in the ST2 enviornment and looks great combined with the dark Soda theme.
+I am partial to the **Twilight** theme, which ships with ST2 and looks great combined with the dark Soda theme.
 
 ### <a name="install-scheme"></a>Installing a color scheme
 
 To install a color scheme, simply go to `Sublime Text 2 -> Preferences -> Browse Packages`, drop your .tmTheme files into the "Color Scheme - Default" folder, and restart ST2.
 
-To activate the color scheme, just select it from the `Sublime Text 2 -> Preferences -> Color Scheme` folder. 
+To activate the color scheme, just select it from the `Sublime Text 2 -> Preferences -> Color Scheme` folder.
 
 Boom. Done.
 
@@ -148,16 +148,20 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 
 	{
 		"auto_complete_commit_on_tab": true,
-		"color_scheme": "Packages/Color Scheme - Default/Made of Code.tmTheme",
+		"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+		"draw_white_space": "selection",
 		"font_face": "Monaco",
 		"font_size": 14.0,
+		"highlight_line": true,
 		"ignored_packages":
 		[
 			"Vintage"
 		],
+		"tab_completion": true,
 		"tab_size": 4,
-		"translate_tabs_to_spaces": false,
 		"theme": "Soda Dark.sublime-theme",
+		"translate_tabs_to_spaces": false,
+		"trim_trailing_white_space_on_save": true,
 		"word_wrap": true
 	}
 
@@ -183,8 +187,8 @@ Below is what my current User Key Bindings `Default (OSX).sublime-keymap - User`
 		{ "keys": ["ctrl+s"], "command": "toggle_side_bar" },
 
 		// Package - Advanced New File
-		{ "keys": ["super+alt+n"], "command": "advanced_new_file"},
-		{ "keys": ["shift+super+alt+n"], "command": "advanced_new_file", "args": {"is_python": true}},
+		{ "keys": ["super+alt+n"], "command": "advanced_new_file" },
+		{ "keys": ["shift+super+alt+n"], "command": "advanced_new_file", "args": { "is_python": true } },
 
 		// Package - Goto Documentation
 		{ "keys": ["ctrl+shift+h"], "command": "goto_documentation" },
@@ -195,7 +199,9 @@ Below is what my current User Key Bindings `Default (OSX).sublime-keymap - User`
 		// Package - Hex-to-RGBa, convert hex values to RGBa
 		{ "keys": ["super+shift+r"], "command": "hex_to_rgba" },
 
-		// Package - SFTP, browse server of current file
+		// Package - SFTP, setup/edit/browse server commands
+		{ "keys": ["ctrl+shift+e"], "command": "sftp_edit_server" },
+		{ "keys": ["ctrl+shift+s"], "command": "sftp_browse_server" },
 		{ "keys": ["super+ctrl+s"], "command": "sftp_browse" }
 	]
 
@@ -400,7 +406,7 @@ Here is an example of what one of my saved `.sublime-project` files looks like:
 		"folders":
 		[
 			{
-				"path": "/Users/[ADMIN_USERNAME]/Dropbox/Sites/examplesite/"
+				"path": "/Users/[ADMIN_USERNAME]/Dropbox/Development/vhosts/examplesite/"
 			}
 		]
 	}
