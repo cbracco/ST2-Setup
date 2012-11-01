@@ -232,6 +232,7 @@ Simpler alignment of multi-line selections and multiple selections.
 Select a chunk of code, or make multiple selections, and press
 
 OSX: <kbd>Cmd+Ctrl+A</kbd>
+
 Windows, Linux: <kbd>Ctrl+Alt+A</kbd>
 
 * * *
@@ -251,6 +252,7 @@ Allows you to copy multiple selections to your clipboard within ST2, to be used 
 To show the clipboard history, press
 
 OSX: <kbd>Cmd+Alt+Ctrl+V</kbd>
+
 Windows, Linux: <kbd>Ctrl+Alt+V</kbd>
 
 * * *
@@ -320,6 +322,7 @@ Converts hexadecimal colors to RGBa colors, and visa versa.
 Click to place your cursor on a hex or RGBa value, and press
 
 OSX: <kbd>Cmd+Shift+R</kbd>
+
 Windows, Linux: <kbd>Ctrl+Shift+R</kbd>
 
 * * *
