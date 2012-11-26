@@ -44,31 +44,29 @@ This project contains a collection of instructions, suggestions, and settings th
 
 	viii. [Detect Syntax](#pkg-detect)
 
-	ix. [Goto Documentation](#pkg-gotodoc)
+	ix. [Emmet (previously ZenCoding)](#pkg-emmet)
 
-	x. [Hex-to-HSL](#pkg-hexhsl)
+	x. [Goto Documentation](#pkg-gotodoc)
 
-	xi. [Hex-to-RGBA](#pkg-hexrgba)
+	xi. [Hex-to-HSL](#pkg-hexhsl)
 
-	xii. [HTML5](#pkg-html5)
+	xii. [Hex-to-RGBA](#pkg-hexrgba)
 
-	xiii. [jQuery](#pkg-jquery)
+	xiii. [HTML5](#pkg-html5)
 
-	xiv. [JsFormat](#pkg-jsformat)
+	xiv. [jQuery](#pkg-jquery)
 
-	xv. [LESS](#pkg-less)
+	xv. [JsFormat](#pkg-jsformat)
 
-	xvi. [NetTuts+ Fetch](#pkg-fetch)
+	xvi. [LESS](#pkg-less)
 
-	xvii. [Sass](#pkg-sass)
+	xvii. [NetTuts+ Fetch](#pkg-fetch)
 
-	xviii. [SFTP](#pkg-sftp)
+	xviii. [Sass](#pkg-sass)
 
-	xix. [Sidebar Enhancements](#pkg-sidebarenhancements)
+	xix. [SFTP](#pkg-sftp)
 
-	xx. [SublimeCodeIntel](#pkg-codeintel)
-
-	xxi. [ZenCoding](#pkg-zencoding)
+	xx. [Sidebar Enhancements](#pkg-sidebarenhancements)
 
 8. **[Use Dropbox? Sync your ST2 setup across multiple devices](#sync)**
 
@@ -289,6 +287,12 @@ Helps to decifer the syntax of files that might not otherwise be detected proper
 
 * * *
 
+### <a name="pkg-emmet"></a> [Emmet](http://docs.emmet.io/) by [Sergey Chikuyonok](https://github.com/sergeche)
+
+An in-editor plugin for high-speed HTML, XML, XSL (or any other structured code format) coding and editing.
+
+* * *
+
 ### <a name="pkg-gotodoc"></a> [Goto Documentation](https://github.com/kemayo/sublime-text-2-goto-documentation) by [David Lynch](https://github.com/kemayo)
 
 Finds relevant documentation for the function you have your cursor on.
@@ -374,18 +378,6 @@ Commercial SFTP/FTP plugin (free with nag popup) - upload, sync, browse, remote 
 ### <a name="pkg-sidebarenhancements"></a> [Sidebar Enhancements](https://github.com/titoBouzout/SideBarEnhancements) by [titoBouzout](https://github.com/titoBouzout)
 
 Adds a bunch of new options to the ST2 sidebar, making it exponentially more useful.
-
-* * *
-
-### <a name="pkg-codeintel"></a> [SublimeCodeIntel](https://github.com/Kronuz/SublimeCodeIntel) by [Germán M. Bravo](https://github.com/Kronuz)
-
-Provides auto-completion information in real-time, and function call tooltips.
-
-* * *
-
-### <a name="pkg-zencoding"></a> [ZenCoding](https://bitbucket.org/sublimator/sublime-2-zencoding) by [Nicholas Dudfield](https://bitbucket.org/sublimator/)
-
-An editor plugin for high-speed HTML, XML, XSL (or any other structured code format) coding and editing.
 
 * * *
 
