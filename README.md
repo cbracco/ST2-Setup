@@ -295,7 +295,7 @@ An in-editor plugin for high-speed HTML, XML, XSL (or any other structured code 
 
 ### <a name="pkg-emmet-snippets"></a> [Emmet CSS Snippets](https://github.com/P233/Emmet-Css-Snippets-for-Sublime-Text-2/blob/master/Snippets%20List.md) by [P233](https://github.com/P233)
 
-CSS snippets based on Emmet CSS syntaxes. Works with CSS, LESS, SCSS, and SASS. You can find the full list of snipppets [here](https://github.com/P233/Emmet-Css-Snippets-for-Sublime-Text-2/blob/master/Snippets%20List.md).
+CSS snippets based on Emmet CSS syntaxes. Works with CSS, LESS, SCSS, and SASS. You can find the full list of snippets [here](https://github.com/P233/Emmet-Css-Snippets-for-Sublime-Text-2/blob/master/Snippets%20List.md).
 
 * * *
 
