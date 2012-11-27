@@ -38,13 +38,13 @@ This project contains a collection of instructions, suggestions, and settings th
 
 	v. [Coffeescript](#pkg-coffeescript)
 
-	vi. [CSS Snippets](#pkg-csssnippets)
+	vi. [CSS Comb](#pkg-csscomb)
 
-	vii. [CSS Comb](#pkg-csscomb)
+	vii. [Detect Syntax](#pkg-detect)
 
-	viii. [Detect Syntax](#pkg-detect)
+	viii. [Emmet (previously ZenCoding)](#pkg-emmet)
 
-	ix. [Emmet (previously ZenCoding)](#pkg-emmet)
+	ix. [Emmet CSS Snippets](#pkg-emmet-snippets)
 
 	x. [Goto Documentation](#pkg-gotodoc)
 
@@ -290,6 +290,12 @@ Helps to decifer the syntax of files that might not otherwise be detected proper
 ### <a name="pkg-emmet"></a> [Emmet](http://docs.emmet.io/) by [Sergey Chikuyonok](https://github.com/sergeche)
 
 An in-editor plugin for high-speed HTML, XML, XSL (or any other structured code format) coding and editing.
+
+* * *
+
+### <a name="pkg-emmet-snippets"></a> [Emmet CSS Snippets](https://github.com/P233/Emmet-Css-Snippets-for-Sublime-Text-2/blob/master/Snippets%20List.md) by [P233](https://github.com/P233)
+
+CSS snippets based on Emmet CSS syntaxes. Works with CSS, LESS, SCSS, and SASS. You can find the full list of snipppets [here](https://github.com/P233/Emmet-Css-Snippets-for-Sublime-Text-2/blob/master/Snippets%20List.md).
 
 * * *
 
