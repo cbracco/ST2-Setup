@@ -407,7 +407,7 @@ Here is an example of what one of my saved `.sublime-project` files looks like:
 		"folders":
 		[
 			{
-				"path": "/Users/[ADMIN_USERNAME]/Dropbox/Development/vhosts/examplesite/"
+				"path": "/Users/[YOUR_USERNAME]/Dropbox/Development/vhosts/examplesite/"
 			}
 		]
 	}
