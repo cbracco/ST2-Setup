@@ -146,8 +146,11 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 
 	{
 		"auto_complete_commit_on_tab": true,
+		"bold_folder_labels": true,
+		"caret_style": "phase",
 		"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
 		"draw_white_space": "selection",
+		"fade_fold_buttons": false,
 		"font_face": "Monaco",
 		"font_size": 14.0,
 		"highlight_line": true,
@@ -155,6 +158,8 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 		[
 			"Vintage"
 		],
+		"line_padding_bottom": 1,
+ 		"line_padding_top": 1,
 		"tab_completion": true,
 		"tab_size": 4,
 		"theme": "Soda Dark.sublime-theme",
