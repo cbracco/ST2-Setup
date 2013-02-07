@@ -149,6 +149,7 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 		"bold_folder_labels": true,
 		"caret_style": "phase",
 		"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+		"detect_slow_plugins": false,
 		"draw_white_space": "selection",
 		"fade_fold_buttons": false,
 		"font_face": "Monaco",
