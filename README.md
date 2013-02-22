@@ -34,39 +34,41 @@ This project contains a collection of instructions, suggestions, and settings th
 
 	iii. [BracketHighlighter](#pkg-brackethighlighter)
 
-	iv. [Clipboard History](#pkg-clipboard)
+	iv. [Browser Refresh](#pkg-browserrefresh)
 
-	v. [Coffeescript](#pkg-coffeescript)
+	v. [Clipboard History](#pkg-clipboard)
 
-	vi. [CSS Comb](#pkg-csscomb)
+	vi. [Coffeescript](#pkg-coffeescript)
 
-	vii. [Detect Syntax](#pkg-detect)
+	vii. [CSS Comb](#pkg-csscomb)
 
-	viii. [Emmet (previously ZenCoding)](#pkg-emmet)
+	viii. [Detect Syntax](#pkg-detect)
 
-	ix. [Emmet CSS Snippets](#pkg-emmet-snippets)
+	ix. [Emmet (previously ZenCoding)](#pkg-emmet)
 
-	x. [Goto Documentation](#pkg-gotodoc)
+	x. [Emmet CSS Snippets](#pkg-emmet-snippets)
 
-	xi. [Hex-to-HSL](#pkg-hexhsl)
+	xi. [Goto Documentation](#pkg-gotodoc)
 
-	xii. [Hex-to-RGBA](#pkg-hexrgba)
+	xii. [Hex-to-HSL](#pkg-hexhsl)
 
-	xiii. [HTML5](#pkg-html5)
+	xiii. [Hex-to-RGBA](#pkg-hexrgba)
 
-	xiv. [jQuery](#pkg-jquery)
+	xiv. [HTML5](#pkg-html5)
 
-	xv. [JsFormat](#pkg-jsformat)
+	xv. [jQuery](#pkg-jquery)
 
-	xvi. [LESS](#pkg-less)
+	xvi. [JsFormat](#pkg-jsformat)
 
-	xvii. [NetTuts+ Fetch](#pkg-fetch)
+	xvii. [LESS](#pkg-less)
 
-	xviii. [Sass](#pkg-sass)
+	xviii. [NetTuts+ Fetch](#pkg-fetch)
 
-	xix. [SFTP](#pkg-sftp)
+	xix. [Sass](#pkg-sass)
 
-	xx. [Sidebar Enhancements](#pkg-sidebarenhancements)
+	xx. [SFTP](#pkg-sftp)
+
+	xxi. [Sidebar Enhancements](#pkg-sidebarenhancements)
 
 8. **[Use Dropbox? Sync your ST2 setup across multiple devices](#sync)**
 
@@ -244,6 +246,12 @@ Windows, Linux: <kbd>Ctrl+Alt+A</kbd>
 ### <a name="pkg-brackethighlighter"></a> [BracketHighlighter](https://github.com/facelessuser/BracketHighlighter) by [Isaac Muse](https://github.com/facelessuser)
 
 Adds highlighting of beginning and ending brackets in many programming languages. A huge time saver.
+
+* * *
+
+### <a name="pkg-browserrefresh"></a> [Browser Refresh](http://gcollazo.github.com/BrowserRefresh-Sublime/) by [Giovanni Collazo](https://github.com/gcollazo)
+
+This plugin will switch from ST2 to Google Chrome, Google Chrome Canary, Safari, Firefox or Opera and reload the active tab.
 
 * * *
 
