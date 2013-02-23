@@ -122,7 +122,7 @@ ST2 Color Schemes alter the look and feel of your code, adding syntax highlighti
 
 In case you didn't know, **ST2 is compatible with [TextMate themes](http://textmatetheme.com)**.
 
-I am partial to the **Twilight** theme, which ships with ST2 and looks great combined with the dark Soda theme.
+I am partial to the **Ciapre** theme, which I found [here](http://tmtheme-editor.herokuapp.com/#/Ciapre).
 
 ### <a name="install-scheme"></a>Installing a color scheme
 
@@ -150,11 +150,16 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 		"auto_complete_commit_on_tab": true,
 		"bold_folder_labels": true,
 		"caret_style": "phase",
-		"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+		"color_scheme": "Packages/Color Scheme - Default/Ciapre.tmtheme",
 		"detect_slow_plugins": false,
-		"draw_white_space": "selection",
-		"fade_fold_buttons": false,
+		"draw_white_space": "all",
+		"find_selected_text": true,
+		"fold_buttons": false,
 		"font_face": "Monaco",
+		"font_options":
+		[
+			"subpixel_antialias"
+		],
 		"font_size": 14.0,
 		"highlight_line": true,
 		"ignored_packages":
@@ -162,7 +167,11 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 			"Vintage"
 		],
 		"line_padding_bottom": 1,
- 		"line_padding_top": 1,
+		"line_padding_top": 1,
+		"rulers":
+		[
+			72, 79
+		],
 		"tab_completion": true,
 		"tab_size": 4,
 		"theme": "Soda Dark.sublime-theme",
