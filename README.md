@@ -7,71 +7,39 @@ This project contains a collection of instructions, suggestions, and settings th
 ### Table of contents
 
 1. **[Install Sublime Text 2](#install-st2)**
-
 2. **[(Optional) Command Line Utility](#command-line)**
-
 3. **[Install Package Control](#package-control)**
-
 4. **[Themes](#themes)**
-
 	i. [Installing the Soda theme](#install-theme)
-
 5. **[Color Schemes](#schemes)**
-
 	i. [Installing a color scheme](#install-scheme)
-
 6. **[Settings](#settings)**
-
 	i. [Preferences](#settings-preferences)
-
 	ii. [Key Bindings](#settings-bindings)
-
 7. **[Packages](#packages)**
-
 	i. [Advanced New File](#pkg-advancednewfile)
-
 	ii. [Alignment](#pkg-alignment)
-
 	iii. [BracketHighlighter](#pkg-brackethighlighter)
-
 	iv. [Browser Refresh](#pkg-browserrefresh)
-
 	v. [Clipboard History](#pkg-clipboard)
-
 	vi. [Coffeescript](#pkg-coffeescript)
-
 	vii. [CSS Comb](#pkg-csscomb)
-
 	viii. [Detect Syntax](#pkg-detect)
-
-	ix. [Emmet (previously ZenCoding)](#pkg-emmet)
-
-	x. [Emmet CSS Snippets](#pkg-emmet-snippets)
-
-	xi. [Goto Documentation](#pkg-gotodoc)
-
-	xii. [Hex-to-HSL](#pkg-hexhsl)
-
-	xiii. [Hex-to-RGBA](#pkg-hexrgba)
-
-	xiv. [HTML5](#pkg-html5)
-
-	xv. [jQuery](#pkg-jquery)
-
-	xvi. [JsFormat](#pkg-jsformat)
-
-	xvii. [LESS](#pkg-less)
-
-	xviii. [NetTuts+ Fetch](#pkg-fetch)
-
-	xix. [Sass](#pkg-sass)
-
-	xx. [SFTP](#pkg-sftp)
-
-	xxi. [Sidebar Enhancements](#pkg-sidebarenhancements)
-
+	ix. [EditorConfig](#pkg-editorconfig)
+	x. [Emmet (previously ZenCoding)](#pkg-emmet)
+	xi. [Emmet CSS Snippets](#pkg-emmet-snippets)
+	xii. [Goto Documentation](#pkg-gotodoc)
+	xiii. [Hex-to-HSL](#pkg-hexhsl)
+	xiv. [Hex-to-RGBA](#pkg-hexrgba)
+	xv. [HTML5](#pkg-html5)
+	xvi. [jQuery](#pkg-jquery)
+	xvii. [JsFormat](#pkg-jsformat)
+	xviii. [LESS](#pkg-less)
+	xix. [NetTuts+ Fetch](#pkg-fetch)
+	xx. [Sass](#pkg-sass)
+	xxi. [SFTP](#pkg-sftp)
+	xxii. [Sidebar Enhancements](#pkg-sidebarenhancements)
 8. **[Use Dropbox? Sync your ST2 setup across multiple devices](#sync)**
-
 	i. [Sync up your ST2 projects](#sync-projects)
 
 ## <a name="install-st2"></a> Install Sublime Text 2
@@ -80,7 +48,7 @@ First thing's first &mdash; you've gotta install the piece. Head on over to [htt
 
 ## <a name="command-line"></a> (Optional) Command Line Utility
 
-	    sublime [arguments] [files]       - edit the given files
+		sublime [arguments] [files]       - edit the given files
 	or: sublime [arguments] [directories] - open the given directories
 	or: sublime [arguments]               - edit stdin
 
@@ -122,11 +90,11 @@ ST2 Color Schemes alter the look and feel of your code, adding syntax highlighti
 
 In case you didn't know, **ST2 is compatible with [TextMate themes](http://textmatetheme.com)**.
 
-I am partial to the **Ciapre** theme, which I found [here](http://tmtheme-editor.herokuapp.com/#/Ciapre).
+I am partial to the **Ciapre** theme, which I found [here](http://tmtheme-editor.herokuapp.com/#/Ciapre). I modified mine a bit because I prefer a darker background and more pronounced string values.
 
 ### <a name="install-scheme"></a>Installing a color scheme
 
-To install a color scheme, simply go to `Sublime Text 2 -> Preferences -> Browse Packages`, drop your .tmTheme files into the "Color Scheme - Default" folder, and restart ST2.
+To install a color scheme, simply go to `Sublime Text 2 -> Preferences -> Browse Packages`, and drop your .tmTheme files into the "Color Scheme - Default" folder.
 
 To activate the color scheme, just select it from the `Sublime Text 2 -> Preferences -> Color Scheme` folder.
 
@@ -150,9 +118,11 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 		"auto_complete_commit_on_tab": true,
 		"bold_folder_labels": true,
 		"caret_style": "phase",
-		"color_scheme": "Packages/Color Scheme - Default/Ciapre.tmtheme",
+		"close_windows_when_empty": false,
+		"color_scheme": "Packages/Color Scheme - Default/Ciapre Dark.tmTheme",
 		"detect_slow_plugins": false,
 		"draw_white_space": "all",
+		"ensure_newline_at_eof_on_save": true,
 		"find_selected_text": true,
 		"fold_buttons": false,
 		"font_face": "Monaco",
@@ -162,15 +132,18 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 		],
 		"font_size": 14.0,
 		"highlight_line": true,
+		"hot_exit": false,
 		"ignored_packages":
 		[
 			"Vintage"
 		],
-		"line_padding_bottom": 1,
-		"line_padding_top": 1,
+		"line_padding_bottom": 2,
+		"line_padding_top": 2,
+		"remember_open_files": false,
 		"rulers":
 		[
-			72, 79
+			72,
+			79
 		],
 		"tab_completion": true,
 		"tab_size": 4,
@@ -204,6 +177,16 @@ Below is what my current User Key Bindings `Default (OSX).sublime-keymap - User`
 		// Package - Advanced New File
 		{ "keys": ["super+alt+n"], "command": "advanced_new_file" },
 		{ "keys": ["shift+super+alt+n"], "command": "advanced_new_file", "args": { "is_python": true } },
+
+		// Package - Browser Refresh
+		{
+			"keys": ["super+alt+b"], "command": "browser_refresh", "args": {
+				"auto_save": true,
+				"delay": 0.0,
+				"activate_browser": true,
+				"browser_name" : "Google Chrome"
+			}
+		},
 
 		// Package - Goto Documentation
 		{ "keys": ["ctrl+shift+h"], "command": "goto_documentation" },
@@ -307,6 +290,11 @@ OSX, Windows Linux: <kbd>Ctrl+Shift+C</kbd>
 ### <a name="pkg-detect"></a> [Detect Syntax](https://github.com/phillipkoebbe/DetectSyntax) by [Phillip Koebe](https://github.com/phillipkoebbe)
 
 Helps to decifer the syntax of files that might not otherwise be detected properly.
+
+* * *
+### <a name="pkg-editorconfig"></a> [EditorConfig](https://github.com/sindresorhus/editorconfig-sublime by [sindresorhus](https://github.com/sindresorhus/)
+
+EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.
 
 * * *
 
