@@ -64,14 +64,16 @@ This project contains a collection of instructions, suggestions, and settings th
 	xvii. [JsFormat](#pkg-jsformat)
 
 	xviii. [LESS](#pkg-less)
+	
+	xix. [MarkdownEditing](#pkg-markdown)
 
-	xix. [NetTuts+ Fetch](#pkg-fetch)
+	xx. [NetTuts+ Fetch](#pkg-fetch)
 
-	xx. [Sass](#pkg-sass)
+	xxi. [Sass](#pkg-sass)
 
-	xxi. [SFTP](#pkg-sftp)
+	xxii. [SFTP](#pkg-sftp)
 
-	xxii. [Sidebar Enhancements](#pkg-sidebarenhancements)
+	xxiii. [Sidebar Enhancements](#pkg-sidebarenhancements)
 
 8. **[Use Dropbox? Sync your ST2 setup across multiple devices](#sync)**
 
@@ -404,6 +406,12 @@ Javascript syntax highlighting for ST2.
 ### <a name="pkg-less"></a> [LESS](https://github.com/danro/LESS-sublime) by [Dan Rogers](http://danro.net/)
 
 LESS syntax highlighting for ST2.
+
+* * *
+
+### <a name="pkg-markdown"></a> [MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing/) by [Brett Terpstra](http://brettterpstra.com/)
+
+Powerful Markdown package for Sublime Text with better syntax understanding and good color schemes.
 
 * * *
 
