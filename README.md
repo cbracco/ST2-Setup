@@ -15,7 +15,7 @@ This project contains a collection of instructions, suggestions, and settings th
 
 4. **[Themes](#themes)**
 
-	i. [Installing the Soda theme](#install-theme)
+	i. [Installing a custom theme](#install-theme)
 
 5. **[Color Schemes](#schemes)**
 
@@ -83,7 +83,7 @@ First thing's first &mdash; you've gotta install the piece. Head on over to [htt
 
 ## <a name="command-line"></a> (Optional) Command Line Utility
 
-		sublime [arguments] [files]       - edit the given files
+	    sublime [arguments] [files]       - edit the given files
 	or: sublime [arguments] [directories] - open the given directories
 	or: sublime [arguments]               - edit stdin
 
@@ -101,23 +101,23 @@ To install, bring up the ST2 console (<kbd>Ctrl + `</kbd>), paste in the followi
 
 It's important to note that ST2 "Themes" change the actual look and feel of the software itself. They are not to be confused with "Color Schemes" (explained in the next section), which alter the look and feel of your code within the editor.
 
-The default look of ST2 is really nice, but I wanted a bit more. I've installed the fantastic [Soda Theme by Ian Hill](https://github.com/buymeasoda/soda-theme), and I am very happy with it. I am currently using the "Dark" option.
+The default look of ST2 is really nice, but I wanted a bit more. I've installed the fantastic [Spacegray Theme by @kkga](http://kkga.github.io/spacegray/), and I am very happy with it. I am currently using the "Eighties" variation.
 
-### <a name="install-theme"></a> Installing the Soda theme
+### <a name="install-theme"></a> Installing a custom theme
 
 1. Press the <kbd>Cmd+Shift+P</kbd> (or <kbd>Ctrl+Shift+P</kbd> for Windows/Linux) key combination, type "install" into the Command Palette, and select the "Package Control: Install Package" option from the list.
 
-2. Type "soda" to narrow down the list, and select the "Theme - Soda" package (click with mouse or press the Enter key) to install it.
+2. Type "Spacegray" to narrow down the list, and select the "Theme - Spacegray" package (click with mouse or press the Enter key) to install it.
 
 3. To activate the theme, open your User Settings file in `Sublime Text 2 -> Preferences -> Settings - User`, and add the following code (change "Dark" to "Light" if you prefer that one instead):
 
 		{
-			"theme": "Soda Dark.sublime-theme"
+			"theme": "Spacegray Eighties.sublime-theme"
 		}
 
 4. Save your User Settings file, and re-open ST2 to see the changes take effect.
 
-If you aren't a fan of the Soda theme, there are [plenty of other options out there](http://lmgtfy.com/?q=Sublime+Text+2+themes).
+If you aren't a fan of the Spacegray theme, there are [plenty of other options out there](http://lmgtfy.com/?q=Sublime+Text+2+themes). A lot of people really enjoy the [Soda Theme by Ian Hill](https://github.com/buymeasoda/soda-theme), too. I used it for a long time before switching to Spacegray.
 
 ## <a name="schemes"></a> Color Schemes
 
@@ -125,7 +125,7 @@ ST2 Color Schemes alter the look and feel of your code, adding syntax highlighti
 
 In case you didn't know, **ST2 is compatible with [TextMate themes](http://textmatetheme.com)**.
 
-I am partial to the **Ciapre** theme, which I found [here](http://tmtheme-editor.herokuapp.com/#/Ciapre). I modified mine a bit because I prefer a darker background and more pronounced string values.
+I am partial to the **base16 eighties** theme, which I found [here](http://chriskempson.github.io/base16/#ocean).
 
 ### <a name="install-scheme"></a>Installing a color scheme
 
@@ -154,7 +154,7 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 		"bold_folder_labels": true,
 		"caret_style": "phase",
 		"close_windows_when_empty": false,
-		"color_scheme": "Packages/Color Scheme - Default/Ciapre Dark.tmTheme",
+		"color_scheme": "Packages/Color Scheme - Spacegray/base16-eighties.dark.tmTheme",
 		"detect_slow_plugins": false,
 		"draw_white_space": "all",
 		"ensure_newline_at_eof_on_save": true,
@@ -182,7 +182,7 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 		],
 		"tab_completion": true,
 		"tab_size": 4,
-		"theme": "Soda Dark.sublime-theme",
+		"theme": "Spacegray Eighties.sublime-theme",
 		"translate_tabs_to_spaces": false,
 		"trim_trailing_white_space_on_save": true,
 		"word_wrap": true
