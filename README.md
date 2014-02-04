@@ -15,7 +15,7 @@ This project contains a collection of instructions, suggestions, and settings th
 
 4. **[Themes](#themes)**
 
-	i. [Installing the Soda theme](#install-theme)
+	i. [Installing a custom theme](#install-theme)
 
 5. **[Color Schemes](#schemes)**
 
@@ -64,14 +64,16 @@ This project contains a collection of instructions, suggestions, and settings th
 	xvii. [JsFormat](#pkg-jsformat)
 
 	xviii. [LESS](#pkg-less)
+	
+	xix. [MarkdownEditing](#pkg-markdown)
 
-	xix. [NetTuts+ Fetch](#pkg-fetch)
+	xx. [NetTuts+ Fetch](#pkg-fetch)
 
-	xx. [Sass](#pkg-sass)
+	xxi. [Sass](#pkg-sass)
 
-	xxi. [SFTP](#pkg-sftp)
+	xxii. [SFTP](#pkg-sftp)
 
-	xxii. [Sidebar Enhancements](#pkg-sidebarenhancements)
+	xxiii. [Sidebar Enhancements](#pkg-sidebarenhancements)
 
 8. **[Use Dropbox? Sync your ST2 setup across multiple devices](#sync)**
 
@@ -83,7 +85,7 @@ First thing's first &mdash; you've gotta install the piece. Head on over to [htt
 
 ## <a name="command-line"></a> (Optional) Command Line Utility
 
-		sublime [arguments] [files]       - edit the given files
+	    sublime [arguments] [files]       - edit the given files
 	or: sublime [arguments] [directories] - open the given directories
 	or: sublime [arguments]               - edit stdin
 
@@ -101,23 +103,23 @@ To install, bring up the ST2 console (<kbd>Ctrl + `</kbd>), paste in the followi
 
 It's important to note that ST2 "Themes" change the actual look and feel of the software itself. They are not to be confused with "Color Schemes" (explained in the next section), which alter the look and feel of your code within the editor.
 
-The default look of ST2 is really nice, but I wanted a bit more. I've installed the fantastic [Soda Theme by Ian Hill](https://github.com/buymeasoda/soda-theme), and I am very happy with it. I am currently using the "Dark" option.
+The default look of ST2 is really nice, but I wanted a bit more. I've installed the fantastic [Spacegray Theme by @kkga](http://kkga.github.io/spacegray/), and I am very happy with it. I am currently using the "Eighties" variation.
 
-### <a name="install-theme"></a> Installing the Soda theme
+### <a name="install-theme"></a> Installing a custom theme
 
 1. Press the <kbd>Cmd+Shift+P</kbd> (or <kbd>Ctrl+Shift+P</kbd> for Windows/Linux) key combination, type "install" into the Command Palette, and select the "Package Control: Install Package" option from the list.
 
-2. Type "soda" to narrow down the list, and select the "Theme - Soda" package (click with mouse or press the Enter key) to install it.
+2. Type "Spacegray" to narrow down the list, and select the "Theme - Spacegray" package (click with mouse or press the Enter key) to install it.
 
 3. To activate the theme, open your User Settings file in `Sublime Text 2 -> Preferences -> Settings - User`, and add the following code (change "Dark" to "Light" if you prefer that one instead):
 
 		{
-			"theme": "Soda Dark.sublime-theme"
+			"theme": "Spacegray Eighties.sublime-theme"
 		}
 
 4. Save your User Settings file, and re-open ST2 to see the changes take effect.
 
-If you aren't a fan of the Soda theme, there are [plenty of other options out there](http://lmgtfy.com/?q=Sublime+Text+2+themes).
+If you aren't a fan of the Spacegray theme, there are [plenty of other options out there](http://lmgtfy.com/?q=Sublime+Text+2+themes). A lot of people really enjoy the [Soda Theme by Ian Hill](https://github.com/buymeasoda/soda-theme), too. I used it for a long time before switching to Spacegray.
 
 ## <a name="schemes"></a> Color Schemes
 
@@ -125,7 +127,7 @@ ST2 Color Schemes alter the look and feel of your code, adding syntax highlighti
 
 In case you didn't know, **ST2 is compatible with [TextMate themes](http://textmatetheme.com)**.
 
-I am partial to the **Ciapre** theme, which I found [here](http://tmtheme-editor.herokuapp.com/#/Ciapre). I modified mine a bit because I prefer a darker background and more pronounced string values.
+I am partial to the **base16 eighties** theme, which I found [here](http://chriskempson.github.io/base16/#ocean).
 
 ### <a name="install-scheme"></a>Installing a color scheme
 
@@ -154,8 +156,9 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 		"bold_folder_labels": true,
 		"caret_style": "phase",
 		"close_windows_when_empty": false,
-		"color_scheme": "Packages/Color Scheme - Default/Ciapre Dark.tmTheme",
+		"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
 		"detect_slow_plugins": false,
+		"dictionary": "Packages/Language - English/en_US.dic",
 		"draw_white_space": "all",
 		"ensure_newline_at_eof_on_save": true,
 		"find_selected_text": true,
@@ -167,26 +170,36 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 		],
 		"font_size": 14.0,
 		"highlight_line": true,
+		"highlight_modified_tabs": true,
 		"hot_exit": false,
 		"ignored_packages":
 		[
-			"Vintage"
+			"Vintage",
+			"AdvancedNewFile"
+		],
+		"indent_guide_options":
+		[
+			"draw_active"
 		],
 		"line_padding_bottom": 2,
 		"line_padding_top": 2,
+		"open_files_in_new_window": false,
 		"remember_open_files": false,
 		"rulers":
 		[
 			72,
 			79
 		],
+		"spell_check": true,
 		"tab_completion": true,
 		"tab_size": 4,
-		"theme": "Soda Dark.sublime-theme",
-		"translate_tabs_to_spaces": false,
+		"theme": "Spacegray Eighties.sublime-theme",
+		"translate_tabs_to_spaces": true,
 		"trim_trailing_white_space_on_save": true,
+		"wide_caret": true,
 		"word_wrap": true
 	}
+
 
 Since I work off a 27" iMac at the office, and a 15" Macbook Pro at home, I find that the Monaco font at size 14 provides a nice, readable experience on both machines.
 
@@ -208,6 +221,14 @@ Below is what my current User Key Bindings `Default (OSX).sublime-keymap - User`
 
 		// Toggle sidebar visibility
 		{ "keys": ["ctrl+s"], "command": "toggle_side_bar" },
+		
+		// Convert spaces to tabs
+		{
+			"keys": ["ctrl+shift+x"], "command": "expand_tabs", "args": {
+				"set_translate_tabs": true
+			}
+		},
+
 
 		// Package - Advanced New File
 		{ "keys": ["super+alt+n"], "command": "advanced_new_file" },
@@ -215,7 +236,7 @@ Below is what my current User Key Bindings `Default (OSX).sublime-keymap - User`
 
 		// Package - Browser Refresh
 		{
-			"keys": ["super+alt+b"], "command": "browser_refresh", "args": {
+			"keys": ["super+shift+r"], "command": "browser_refresh", "args": {
 				"auto_save": true,
 				"delay": 0.0,
 				"activate_browser": true,
@@ -404,6 +425,12 @@ Javascript syntax highlighting for ST2.
 ### <a name="pkg-less"></a> [LESS](https://github.com/danro/LESS-sublime) by [Dan Rogers](http://danro.net/)
 
 LESS syntax highlighting for ST2.
+
+* * *
+
+### <a name="pkg-markdown"></a> [MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing/) by [Brett Terpstra](http://brettterpstra.com/)
+
+Powerful Markdown package for Sublime Text with better syntax understanding and good color schemes.
 
 * * *
 
