@@ -156,8 +156,9 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 		"bold_folder_labels": true,
 		"caret_style": "phase",
 		"close_windows_when_empty": false,
-		"color_scheme": "Packages/Color Scheme - Spacegray/base16-eighties.dark.tmTheme",
+		"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
 		"detect_slow_plugins": false,
+		"dictionary": "Packages/Language - English/en_US.dic",
 		"draw_white_space": "all",
 		"ensure_newline_at_eof_on_save": true,
 		"find_selected_text": true,
@@ -169,26 +170,36 @@ Below is what my current User Settings `Preferences.sublime-settings - User` fil
 		],
 		"font_size": 14.0,
 		"highlight_line": true,
+		"highlight_modified_tabs": true,
 		"hot_exit": false,
 		"ignored_packages":
 		[
-			"Vintage"
+			"Vintage",
+			"AdvancedNewFile"
+		],
+		"indent_guide_options":
+		[
+			"draw_active"
 		],
 		"line_padding_bottom": 2,
 		"line_padding_top": 2,
+		"open_files_in_new_window": false,
 		"remember_open_files": false,
 		"rulers":
 		[
 			72,
 			79
 		],
+		"spell_check": true,
 		"tab_completion": true,
 		"tab_size": 4,
 		"theme": "Spacegray Eighties.sublime-theme",
-		"translate_tabs_to_spaces": false,
+		"translate_tabs_to_spaces": true,
 		"trim_trailing_white_space_on_save": true,
+		"wide_caret": true,
 		"word_wrap": true
 	}
+
 
 Since I work off a 27" iMac at the office, and a 15" Macbook Pro at home, I find that the Monaco font at size 14 provides a nice, readable experience on both machines.
 
@@ -210,6 +221,14 @@ Below is what my current User Key Bindings `Default (OSX).sublime-keymap - User`
 
 		// Toggle sidebar visibility
 		{ "keys": ["ctrl+s"], "command": "toggle_side_bar" },
+		
+		// Convert spaces to tabs
+		{
+			"keys": ["ctrl+shift+x"], "command": "expand_tabs", "args": {
+				"set_translate_tabs": true
+			}
+		},
+
 
 		// Package - Advanced New File
 		{ "keys": ["super+alt+n"], "command": "advanced_new_file" },
@@ -217,7 +236,7 @@ Below is what my current User Key Bindings `Default (OSX).sublime-keymap - User`
 
 		// Package - Browser Refresh
 		{
-			"keys": ["super+alt+b"], "command": "browser_refresh", "args": {
+			"keys": ["super+shift+r"], "command": "browser_refresh", "args": {
 				"auto_save": true,
 				"delay": 0.0,
 				"activate_browser": true,
